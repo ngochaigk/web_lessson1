@@ -1,0 +1,13 @@
+<html>  
+    {% if bmi > 30 %}
+        <p>Obese</p>
+    {{ elif bmi > 22.5 }}
+        <p>Overweight</p>
+    {{ elif bmi > 18.5 }}
+        <p>Normal</p>
+    {{ elif bmi > 16 }}
+        <p>Underweight</p>
+    {{else}}
+        <p>Severely underweight</p>
+    {% endif %}
+</html>
